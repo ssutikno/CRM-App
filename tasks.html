@@ -1,0 +1,26 @@
+<div class="d-flex justify-content-between align-items-center mt-4">
+    <h1>Tasks & Activities</h1>
+    <button class="btn btn-primary" id="add-task-btn"><i class="fas fa-plus me-2"></i>New Task</button>
+</div>
+<p class="lead">Manage your to-do list and stay on top of your schedule.</p>
+
+<div class="card shadow-sm">
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs" id="task-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="true" href="#" data-task-filter="upcoming">Upcoming</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-task-filter="overdue">Overdue <span class="badge rounded-pill bg-danger" id="overdue-count"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-task-filter="completed">Completed</a>
+            </li>
+        </ul>
+    </div>
+    <div class="card-body">
+        <ul class="list-group list-group-flush" id="task-list-container">
+            <!-- Task items will be dynamically inserted here -->
+        </ul>
+    </div>
+</div>

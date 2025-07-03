@@ -1,0 +1,98 @@
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead">Welcome back, John! Here's a snapshot of your sales activity.</p>
+
+<div class="row">
+    <div class="col-md-3 mb-4">
+        <div class="card text-white bg-primary shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="card-title">New Leads</h5>
+                        <p class="card-text fs-2" id="dashboard-new-leads">--</p>
+                    </div>
+                    <i class="fas fa-bullseye fa-3x opacity-50"></i>
+                </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a href="#" class="small text-white stretched-link" data-content="leads.html">View Details</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-4">
+        <div class="card text-white bg-success shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="card-title">Open Opportunities</h5>
+                        <p class="card-text fs-2" id="dashboard-open-deals">$--</p>
+                    </div>
+                    <i class="fas fa-chart-line fa-3x opacity-50"></i>
+                </div>
+            </div>
+             <div class="card-footer d-flex align-items-center justify-content-between">
+                <a href="#" class="small text-white stretched-link" data-content="pipeline.html">View Pipeline</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-4">
+        <div class="card text-white bg-warning shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="card-title">Tasks Due Today</h5>
+                        <p class="card-text fs-2" id="dashboard-tasks-due">--</p>
+                    </div>
+                    <i class="fas fa-tasks fa-3x opacity-50"></i>
+                </div>
+            </div>
+             <div class="card-footer d-flex align-items-center justify-content-between">
+                <a href="#" class="small text-white stretched-link" data-content="tasks.html">View Tasks</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-4">
+        <div class="card text-white bg-danger shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="card-title">Deals Closing Soon</h5>
+                        <p class="card-text fs-2" id="dashboard-deals-closing">--</p>
+                    </div>
+                    <i class="fas fa-fire-alt fa-3x opacity-50"></i>
+                </div>
+            </div>
+             <div class="card-footer d-flex align-items-center justify-content-between">
+                <a href="#" class="small text-white stretched-link" data-content="pipeline.html">View Report</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <i class="fas fa-chart-bar me-1"></i>
+                Sales This Month
+            </div>
+            <div class="card-body">
+                <canvas id="myAreaChart" width="100%" height="40"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <i class="fas fa-clipboard-list me-1"></i>
+                Recent Activity
+            </div>
+            <div class="card-body" id="dashboard-recent-activity">
+                 <!-- Activity will be loaded here -->
+            </div>
+        </div>
+    </div>
+</div>

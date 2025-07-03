@@ -1,0 +1,97 @@
+<div class="modal fade" id="newQuoteModal" tabindex="-1" aria-labelledby="newQuoteModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newQuoteModalLabel">Create New Quote</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="mb-3">
+                <label for="customerName" class="form-label">Customer</label>
+                <input type="text" class="form-control" id="customerName" value="Mega Enterprises">
+            </div>
+            <div class="mb-3">
+                <label for="productSearch" class="form-label">Add Products from Catalog</label>
+                <input type="text" class="form-control" id="productSearch" placeholder="Search for 'GEAR Velocity pro'...">
+            </div>
+             <div class="mb-3">
+                 <h6>Quote Items</h6>
+                 <ul class="list-group">
+                     <li class="list-group-item d-flex justify-content-between align-items-center">
+                         <div><strong>Product:</strong> GEAR Velocity pro Workstation <br> <strong>Qty:</strong> 200</div>
+                         <div><strong>Price:</strong> $300,000</div>
+                     </li>
+                 </ul>
+            </div>
+            <div class="mb-3">
+                <label for="quoteTemplate" class="form-label">Proposal Template</label>
+                <select class="form-select" id="quoteTemplate">
+                    <option selected>Standard Corporate Branding</option>
+                    <option>Enterprise IT Proposal</option>
+                </select>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Generate & Save PDF</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addLeadModal" tabindex="-1" aria-labelledby="addLeadModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addLeadModalLabel">Add New Lead</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="mb-3"><label class="form-label">Full Name</label><input type="text" class="form-control"></div>
+            <div class="mb-3"><label class="form-label">Email</label><input type="email" class="form-control"></div>
+            <div class="mb-3"><label class="form-label">Company</label><input type="text" class="form-control"></div>
+            <div class="mb-3"><label class="form-label">Lead Source</label><select class="form-select"><option>Website</option><option>Referral</option></select></div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Save Lead</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addTaskModal" tabindex="-1" aria-labelledby="addTaskModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><h5 class="modal-title" id="addTaskModalLabel">Add New Task</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3"><label class="form-label">Task Title</label><input type="text" class="form-control" value="Follow up with Alpha Corp"></div>
+                    <div class="mb-3"><label class="form-label">Due Date</label><input type="date" class="form-control"></div>
+                    <div class="mb-3"><label class="form-label">Assign To</label><select class="form-select"><option>John Doe</option></select></div>
+                </form>
+            </div>
+            <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button><button type="button" class="btn btn-success">Save Task</button></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="generateReportModal" tabindex="-1" aria-labelledby="generateReportModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title" id="generateReportModalLabel">Generate Custom Report</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <div class="modal-body">
+        <form>
+            <div class="mb-3"><label class="form-label">Report Type</label><select class="form-select"><option>Sales Cycle Length</option><option>Team Performance</option><option>Win/Loss Analysis</option></select></div>
+            <div class="mb-3"><label class="form-label">Date Range</label><input type="text" class="form-control" value="Last Quarter"></div>
+            <div class="mb-3"><label class="form-label">Data Visualization</label><select class="form-select"><option>Bar Chart</option><option>Line Chart</option><option>Pie Chart</option><option>Table</option></select></div>
+        </form>
+      </div>
+      <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button><button type="button" class="btn btn-primary">Generate</button></div>
+    </div>
+  </div>
+</div>

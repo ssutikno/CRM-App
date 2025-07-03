@@ -1,0 +1,105 @@
+/* Basic Layout & Sidebar Styles */
+#wrapper {
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    width: 250px;
+    margin-left: -250px;
+    transition: margin 0.3s ease;
+    background-color: #1a2229; /* Darker sidebar */
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    min-width: 0; /* Important for flexbox to not overflow */
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -250px;
+    }
+    
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+/* Sidebar Theming */
+.sidebar-heading {
+    color: #0d6efd; /* Bootstrap primary blue */
+}
+
+.list-group-item {
+    border: none;
+    padding: 1rem 1.5rem;
+    color: #adb5bd; /* Light gray text */
+}
+
+.list-group-item-action:hover,
+.list-group-item-action:focus {
+    color: #fff;
+    background-color: #273441; /* Darker hover */
+}
+
+.list-group-item.active {
+    background-color: #0d6efd;
+    color: #fff;
+    border-right: 5px solid #ffc107; /* Accent color */
+}
+
+/* Sales Pipeline (Kanban) Styles */
+.pipeline-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.pipeline-stage {
+    min-width: 300px;
+    width: 300px;
+    background-color: #e9ecef; /* Light grey background for columns */
+    border-radius: 0.375rem; /* Bootstrap's default border-radius */
+    flex-shrink: 0; /* Prevent columns from shrinking */
+}
+
+.pipeline-stage h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.stage-cards {
+    padding: 1rem;
+    min-height: 400px; /* Ensure columns have a minimum height */
+    border-radius: 0.375rem;
+}
+
+.deal-card {
+    cursor: grab;
+    border-left: 4px solid #0d6efd; /* Accent border */
+}
+
+.deal-card:active {
+    cursor: grabbing;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+/* SortableJS helper classes */
+.sortable-ghost {
+  opacity: 0.4;
+  background-color: #c8ebfb;
+}
+
+.sortable-chosen {
+  cursor: grabbing !important;
+}

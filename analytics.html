@@ -1,0 +1,58 @@
+<h1 class="mt-4">Advanced Analytics & Reporting</h1>
+<p class="lead">Transforming data into actionable insights based on live data.</p>
+
+<div class="row">
+    <div class="col-lg-7">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header">
+                <i class="fas fa-chart-line me-1"></i>
+                Sales Revenue (This Quarter)
+            </div>
+            <div class="card-body">
+                <canvas id="revenueChart" width="100%" height="50"></canvas>
+            </div>
+        </div>
+        <div class="card shadow-sm mb-4">
+            <div class="card-header">
+                <i class="fas fa-trophy me-1"></i>
+                Team Performance Leaderboard
+            </div>
+            <div class="card-body">
+                <table class="table table-sm" id="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Salesperson</th>
+                            <th>Deals Won</th>
+                            <th>Total Revenue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Leaderboard data will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header">
+                <i class="fas fa-chart-pie me-1"></i>
+                Win/Loss Analysis
+            </div>
+            <div class="card-body">
+                <canvas id="winLossChart" width="100%" height="65"></canvas>
+            </div>
+        </div>
+        <div class="card shadow-sm mb-4">
+            <div class="card-header">
+                <i class="fas fa-history me-1"></i>
+                Average Sales Cycle Length
+            </div>
+            <div class="card-body text-center">
+                <h1 class="display-4" id="avg-cycle-time">-- Days</h1>
+                <p class="text-muted">For all closed deals</p>
+            </div>
+        </div>
+    </div>
+</div>
